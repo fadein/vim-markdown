@@ -28,3 +28,4 @@ augroup markdown-fold
 augroup END
 
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'zsh']
+setlocal makeprg=pandoc\ -V\ geometry:margin=0.5in\ %\ --pdf-engine=xelatex\ -o\ %:t:r.pdf
