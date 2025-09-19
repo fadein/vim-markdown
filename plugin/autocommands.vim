@@ -9,4 +9,4 @@
 " script, which is run earlier in the startup process.
 
 autocmd BufRead *.frag,*.ig,*.beat setlocal filetype=markdown
-autocmd FileType markdown setlocal spell isfname-=#
+autocmd FileType markdown setlocal spell isfname-=# makeprg=pandoc\ -V\ geometry:margin=0.5in\ %\ --pdf-engine=xelatex\ -o\ %:t:r.pdf
