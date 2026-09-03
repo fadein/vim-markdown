@@ -7,7 +7,8 @@ autocmd BufNewFile,BufRead *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn
       \   setf markdown |
       \ endif
 
-autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <C-k>     mz0ci[✓`z
-autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <C-s>     mz0ci[◎`z
-autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <C-q>     mz0ci[✗`z
-autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <C-space> mz0ci[ `z
+autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <C-k>  mz0ci[✓`z
+autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <C-s>  mz0ci[◎`z
+autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <C-q>  mz0ci[✗`z
+" <Nul> == <C-Space>
+autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <Nul>  mz0ci[ `z
