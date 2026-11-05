@@ -12,3 +12,4 @@ autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <C-s>  mz0ci[◎`z
 autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <C-q>  mz0ci[✗`z
 " <Nul> == <C-Space>
 autocmd BufNewFile,BufRead TODO.md nnoremap <buffer> <Nul>  mz0ci[ `z
+autocmd BufNewFile,BufRead TODO.md setlocal commentstring=%s
